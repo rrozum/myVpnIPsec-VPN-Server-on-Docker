@@ -1,0 +1,14 @@
+version: "2.4"
+services:
+  vpn-service:
+    build: 
+      dockerfile: ./Dockerfile
+      context: ./
+    restart: always
+    ports:
+      - 500:500/udp
+      - 4500:4500/udp
+    privileged: true
+    volumes:
+      - "ikev2-vpn-data:/etc/ipsec.d"
+      - "/lib/modules:/lib/modules:ro"
