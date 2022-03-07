@@ -1,0 +1,1 @@
+docker exec -it ipsec-vpn-server ikev2.sh --listclients

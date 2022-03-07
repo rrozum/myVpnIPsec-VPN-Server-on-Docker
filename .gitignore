@@ -1,2 +1,3 @@
 vpn.env
 .vscode
+ikev2-vpn-data/**
